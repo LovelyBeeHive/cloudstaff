@@ -22,24 +22,7 @@ CloudStaff gives your staff team the tools to moderate players and keep useful r
 | **Staff tools** | Staff chat, vanish, and freeze or unfreeze players |
 | **Player records** | View punishment history and search command history |
 | **Configuration** | Customize messages, timezone, appeal text, logging, and freeze settings |
-| **Metrics** | Anonymous plugin usage statistics through bStats, with an opt-out setting |
 
-## ⌨️ Commands
-
-| Command | Permission |
-| --- | --- |
-| `/ban <player> [reason]`, `/tempban <player> <duration> [reason]`, `/unban <player>` | `cloudstaff.ban` |
-| `/mute <player> [reason]`, `/tempmute <player> <duration> [reason]`, `/unmute <player>` | `cloudstaff.mute` |
-| `/kick <player> [reason]` | `cloudstaff.kick` |
-| `/warn <player> <reason>` | `cloudstaff.warn` |
-| `/history <player>` | `cloudstaff.history` |
-| `/cmdhistory <player> [word] [page]` | `cloudstaff.cmdhistory` |
-| `/staffchat [message]` (`/sc`) | `cloudstaff.staffchat` |
-| `/vanish` (`/v`) | `cloudstaff.vanish` |
-| `/freeze <player>` | `cloudstaff.freeze` |
-| `/cloudstaff reload` | `cloudstaff.admin` |
-
-Staff permissions default to operators. You can grant them individually with a permissions plugin such as LuckPerms. Other permission nodes include `cloudstaff.notify`, `cloudstaff.vanish.see`, `cloudstaff.exempt`, and `cloudstaff.nolog`.
 
 ## 🚀 Install
 
@@ -52,9 +35,8 @@ Keep `plugins/CloudStaff/cloudstaff.db` when updating the plugin; it holds saved
 
 ## 🔒 Privacy note
 
-Command history can include command arguments. Add your server's private-message and authentication commands to `commands.ignore`, or give sensitive users `cloudstaff.nolog`. Only staff with `cloudstaff.cmdhistory` can search command history.
+Command history can include command arguments. Add your server's private message and authentication commands to `commands.ignore`, or give sensitive users `cloudstaff.nolog`. Only staff with `cloudstaff.cmdhistory` can search command history.
 
-bStats collection can be disabled by the server owner in `plugins/bStats/config.yml`.
 
 ## 📚 Documentation
 
