@@ -22,7 +22,15 @@ CloudStaff gives your staff team the tools to moderate players and keep useful r
 | **Staff tools** | Staff chat, vanish, and freeze or unfreeze players |
 | **Player records** | View punishment history and search command history |
 | **Configuration** | Customize messages, timezone, appeal text, logging, and freeze settings |
+| **Metrics** | Anonymous plugin usage statistics through bStats, with an opt-out setting |
 
+## ⌨️ Commands
+
+- `/cloudstaff help` or `/cs help` — show the commands you can use and their permission nodes.
+- `/cloudstaff reload` or `/cs reload` — reload the config (**requires** `cloudstaff.admin`).
+- Moderation and staff commands: `/ban`, `/tempban`, `/unban`, `/mute`, `/tempmute`, `/unmute`, `/kick`, `/warn`, `/history`, `/cmdhistory`, `/staffchat`, `/vanish`, and `/freeze`.
+
+The help output only lists commands available to the sender. Staff permissions default to operators and can be granted individually with a permissions plugin such as LuckPerms.
 
 ## 🚀 Install
 
@@ -35,8 +43,9 @@ Keep `plugins/CloudStaff/cloudstaff.db` when updating the plugin; it holds saved
 
 ## 🔒 Privacy note
 
-Command history can include command arguments. Add your server's private message and authentication commands to `commands.ignore`, or give sensitive users `cloudstaff.nolog`. Only staff with `cloudstaff.cmdhistory` can search command history.
+Command history can include command arguments. Add your server's private-message and authentication commands to `commands.ignore`, or give sensitive users `cloudstaff.nolog`. Only staff with `cloudstaff.cmdhistory` can search command history.
 
+bStats collection can be disabled by the server owner in `plugins/bStats/config.yml`.
 
 ## 📚 Documentation
 
